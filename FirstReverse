@@ -1,0 +1,25 @@
+import java.util.*; 
+import java.io.*;
+
+class Function {  
+  String FirstReverse(String str) { 
+  
+    String rev ="";
+    int num = str.length()-1;
+    String ori =str;
+    for(int i= num; i>=0;i--){
+    	rev = rev + ori.charAt(i);
+    }
+    return rev;
+    
+  } 
+  
+  public static void main (String[] args) {  
+    // keep this function call here     
+    Scanner  s = new Scanner(System.in);
+    Function c = new Function();
+    System.out.print(c.FirstReverse(s.nextLine())); 
+  }   
+  
+}           
+
